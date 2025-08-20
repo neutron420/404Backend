@@ -123,9 +123,13 @@
 //     println!("After update: {}", s);
 // 
 
-fn main(){
- let _x: i32 = 10;
- println!("Value of x: {}", _x);
-}
+// fn main(){
+//  let _x: i32 = 10;
+//  println!("Value of x: {}", _x);
+// }
 
+fn main(){
+    let s1: String = String::from("hello");
+    println!(" {}", s1);
+}
 
