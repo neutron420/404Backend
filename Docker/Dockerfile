@@ -1,6 +1,6 @@
 FROM rust:1.73 as builder
 
-WORKDIR /usr/src/app
+WORKDIR /src
 
 COPY ../ .
 
