@@ -128,8 +128,38 @@
 //  println!("Value of x: {}", _x);
 // }
 
-fn main(){
-    let s1: String = String::from("hello");
-    println!(" {}", s1);
-}
+// fn main(){
+//     let s1: String = String::from("hello");
+//     println!(" {}", s1);
+// }
 
+
+// fn main(){
+//     stack_fn();
+//     heap_fn();
+//     update_string();
+// }
+
+// fn stack_fn(){
+//     let _a = 10;
+//     let _b=20;
+//     let c= _a+_b;
+//     println!("Stack function: Th sum of {} and {} is {}", _a, _b, c);  
+// }
+
+// fn heap_fn(){
+//     let s1: String = String::from("Hello");
+//     let s2: String = String::from("World");
+//     let combined = format!("{} {}", s1, s2);
+//     println!("Heap function: Combined string is '{}'", combined);
+// }
+
+// fn update_string(){
+//     let mut _s=String::from("initial striunf");
+//     println!("Before update: {}", _s);
+//     _s.push_str(" and some additional text");
+//     println!("After update: {}", _s);
+// }
+
+
+ 
