@@ -162,4 +162,119 @@
 // }
 
 
- 
+//  fn main (){
+//    create_str();
+//    print!("{}" , 20);
+//  }
+
+//  fn create_str(){
+
+//      let s1 =String::from("hello");
+//     print!(" {}", s1);
+//     let _s2 =s1;
+//     println!(" {}", _s2);
+//  }
+
+
+// fn main() {
+//     let my_string : i32 = 2;
+//     takes_ownership(my_string);
+//     println!("{}", my_string); // This line would cause a compile error because ownership has been moved.
+// }
+
+// fn takes_ownership(some_string:i32) {
+//     println!("{}", some_string); // `some_string` now owns the data.
+// }
+
+
+// fn main() {
+//     let my_string = String::from("hello");
+//     takes_ownership(my_string.clone());
+//     println!("{}", my_string); // This line would cause a compile error because ownership has been moved.
+// }
+
+// fn takes_ownership(some_string: String)  -> String {
+//     println!("{}", some_string); // `some_string` now owns the data.
+//     return some_string;
+// }
+
+
+// struct User {
+//     active: bool,
+//     username: String,
+//     email: String,
+//     sign_in_count: u64,
+// }
+
+// fn main() {
+//     let user1 = User {
+//         active: true,
+//         username: String::from("someusername123"),
+//         email: String::from("someone@example.com"),
+//         sign_in_count: 1,
+//     };
+//     print!("User 1 username: {:?}", user1.username);
+// }
+
+
+// struct User {
+//     active: bool,
+//     sign_in_count: u64,
+//     username: String,
+// }
+
+// fn main() {
+//     let mut user1 = User {
+//         active: true,
+//         sign_in_count: 1,
+//         username: "harkirat".to_string()
+//     };
+
+//     change_name(user1);
+//     print!("User 1 username: {}", user1.active); // Error - can not use borrowed value
+// }
+
+// fn change_name(user1: User) {
+//     print!("User 1 username: {:?}", user1.active);
+// }
+
+// #[derive(Clone)]
+// struct User {
+//     active: bool,
+//     sign_in_count: u64,
+//     username: String,
+// }
+
+// fn main() {
+//     let mut user1 = User {
+//         active: true,
+//         sign_in_count: 1,
+//         username: "harkirat".to_string()
+//     };
+
+//     change_name(user1.clone());
+//     print!("User 1 username: {}", user1.active); // Error - can not use borrowed value
+// }
+
+// fn change_name(user1: User) {
+//     print!("User 1 username: {:?}", user1.active);
+// }
+
+struct Rect {
+   width: u32,
+   height: u32,
+}
+
+impl Rect {
+    fn area(&self) -> u32 {
+         self.width * self.height
+    }
+}
+
+fn main() {
+    let rect = Rect {
+        width: 30,
+        height: 50,
+    };
+    print!("The area of the rectangle is {}", rect.area());
+}
